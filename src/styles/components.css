@@ -1,0 +1,53 @@
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.9rem 1.5rem; border-radius: 999px;
+  font: 600 0.9375rem/1 var(--font-body); text-decoration: none; border: 1px solid transparent;
+  transition: background-color var(--dur-s) var(--ease-css), color var(--dur-s) var(--ease-css); }
+.btn--ink   { background: var(--ink);   color: var(--paper); }
+.btn--paper { background: var(--paper); color: var(--ink); }
+.btn--ghost-light { border-color: var(--ink-30); color: var(--ink); }
+.btn--ghost-dark  { border-color: var(--paper-30); color: var(--paper); }
+@media (hover: hover) and (min-width: 992px) {
+  .btn--ink:hover   { background: var(--navy); }
+  .btn--paper:hover { background: var(--amber); }            /* ink on amber: passes */
+}
+.pill-soon { display: inline-block; padding: 0.3rem 0.6rem; border-radius: 999px; background: var(--amber); color: var(--ink);
+  font: 600 0.6875rem/1 var(--font-body); letter-spacing: 0.05em; text-transform: uppercase; }
+.monogram { width: 3rem; aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center;
+  font: 500 1rem var(--font-display); background: var(--ink-05); }
+[data-bg="dark"] .monogram, [data-ground="dark"] .monogram { background: var(--paper-10); }
+
+/* Accordion (FAQ, case studies) */
+.accordion__panel { overflow: hidden; }
+.accordion__heading { margin: 0; }
+.accordion__trigger { all: unset; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 1rem; width: 100%; padding: 1.25rem 0; cursor: pointer; font-weight: 600; border-bottom: 1px solid var(--ink-10); }
+[data-bg="dark"] .accordion__trigger, [data-bg="color"] .accordion__trigger { border-bottom-color: var(--paper-10); }
+.accordion__icon { flex: none; width: 1em; text-align: center; }
+.accordion__icon::before { content: "+"; }
+.accordion__trigger[aria-expanded="true"] .accordion__icon::before { content: "\2212"; }  /* minus sign */
+.accordion__inner { padding: 1rem 0 1.5rem; }
+
+/* Tabs (About FAQ) */
+[role="tablist"] { display: flex; gap: 0.5rem; margin-bottom: 2rem; }
+[role="tab"] { background: none; border: 1px solid var(--ink-30); border-radius: 999px; padding: 0.6rem 1.25rem; cursor: pointer; font: 600 0.8125rem/1 var(--font-body); }
+[role="tab"][aria-selected="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+/* Testimonials */
+.testimonial { margin: 0; }
+.testimonial blockquote { margin: 0 0 1.25rem; }
+.testimonial figcaption { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; }
+.testimonial__note { font-size: 0.8125rem; margin: 0; }
+
+/* Waitlist form */
+.waitlist { max-width: 28rem; margin: 3rem auto 0; text-align: left; }
+.waitlist__row { display: flex; gap: 0.75rem; margin-top: 0.5rem; }
+.waitlist__row input { flex: 1; min-width: 0; padding: 0.9rem 1rem; border-radius: 999px; border: 1px solid var(--paper-30); background: transparent; color: inherit; }
+.waitlist__row input::placeholder { color: var(--paper-60); }
+.waitlist__consent, .waitlist__alt { font-size: 0.8125rem; margin: 0.75rem 0 0; color: var(--paper-60); }
+.waitlist__consent a, .waitlist__alt a { color: inherit; }
+.waitlist__status { margin: 0.75rem 0 0; min-height: 1.2em; font-size: 0.875rem; }
+.waitlist[data-state="error"] .waitlist__status { color: var(--red); }
+[data-bg="dark"] .waitlist[data-state="error"] .waitlist__status,
+[data-bg="color"] .waitlist[data-state="error"] .waitlist__status {   /* red and amber both fail as text on blue */
+  color: var(--paper); border-left: 3px solid var(--amber); padding-left: 0.75rem;
+}
+.waitlist input[aria-invalid="true"] { border-color: var(--red); }

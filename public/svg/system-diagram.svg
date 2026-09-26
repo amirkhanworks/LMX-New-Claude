@@ -1,0 +1,44 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="system-diagram-title" stroke="#FAFAF8" fill="none" stroke-width="2" stroke-linecap="square" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="18" letter-spacing="1">
+  <title id="system-diagram-title">Diagram: the switchboard connects to hot-swappable relays; only the relay side carries 240V; a low-voltage main board connects to the app, voice and keychain remote</title>
+
+  <!-- Switchboard -->
+  <rect x="80" y="360" width="220" height="180" rx="4"/>
+  <text x="190" y="330" fill="#FAFAF8" stroke="none" text-anchor="middle">SWITCHBOARD</text>
+
+  <!-- 240V boundary (relay side only) -->
+  <rect x="360" y="320" width="360" height="260" rx="4" stroke-dasharray="6 8"/>
+  <text x="540" y="600" fill="#FAFAF8" stroke="none" text-anchor="middle">240V</text>
+
+  <!-- Relay bank -->
+  <g>
+    <rect x="390" y="360" width="300" height="180" rx="4"/>
+    <text x="540" y="330" fill="#FAFAF8" stroke="none" text-anchor="middle">RELAY BANK</text>
+    <text x="540" y="455" fill="#FAFAF8" stroke="none" text-anchor="middle">CH 01 TO 10</text>
+    <text x="540" y="480" fill="#FAFAF8" stroke="none" text-anchor="middle">HOT-SWAPPABLE</text>
+  </g>
+
+  <line x1="300" y1="450" x2="390" y2="450"/>
+
+  <!-- Low-voltage main board -->
+  <rect x="820" y="330" width="320" height="240" rx="4"/>
+  <text x="980" y="300" fill="#FAFAF8" stroke="none" text-anchor="middle">LOW-VOLTAGE MAIN BOARD</text>
+  <text x="980" y="420" fill="#FAFAF8" stroke="none" text-anchor="middle">MIC</text>
+  <text x="980" y="450" fill="#FAFAF8" stroke="none" text-anchor="middle">SPEAKER</text>
+  <text x="980" y="480" fill="#FAFAF8" stroke="none" text-anchor="middle">IR</text>
+  <text x="980" y="510" fill="#FAFAF8" stroke="none" text-anchor="middle">BLE</text>
+
+  <line x1="720" y1="450" x2="820" y2="450"/>
+
+  <!-- Three control paths -->
+  <line x1="1140" y1="380" x2="1240" y2="280"/>
+  <rect x="1240" y="240" width="220" height="80" rx="4"/>
+  <text x="1350" y="286" fill="#FAFAF8" stroke="none" text-anchor="middle">APP</text>
+
+  <line x1="1140" y1="450" x2="1240" y2="450"/>
+  <rect x="1240" y="410" width="220" height="80" rx="4"/>
+  <text x="1350" y="456" fill="#FAFAF8" stroke="none" text-anchor="middle">VOICE</text>
+
+  <line x1="1140" y1="520" x2="1240" y2="620"/>
+  <rect x="1240" y="580" width="220" height="80" rx="4"/>
+  <text x="1350" y="626" fill="#FAFAF8" stroke="none" text-anchor="middle">KEYCHAIN</text>
+</svg>

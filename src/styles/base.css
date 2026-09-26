@@ -1,0 +1,46 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--navy);            /* shows only through deliberate gaps (curtain hand-off, footer) */
+  color: var(--ink);
+  font: 400 var(--fs-body)/1.6 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+body.is-locked { overflow: hidden; padding-right: var(--sbw); }
+img, video, svg, picture { display: block; max-width: 100%; }
+img { height: auto; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+
+main { position: relative; z-index: 1; overflow-x: clip; }   /* clip, never hidden: hidden breaks sticky */
+
+/* Grounds: data-bg only on top-level sections; never nest data-bg */
+[data-bg="light"] { background: var(--paper); color: var(--ink); }
+[data-bg="dark"]  { background: var(--navy);  color: var(--paper); }
+[data-bg="color"] { background: var(--blue);  color: var(--paper); }
+/* Inner layers that need a ground but must not drive theme */
+[data-ground="light"] { background: var(--paper); color: var(--ink); }
+[data-ground="dark"]  { background: var(--navy);  color: var(--paper); }
+
+/* Focus */
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; box-shadow: 0 0 0 4px var(--paper); border-radius: 2px; }
+[data-bg="dark"] :focus-visible, [data-bg="color"] :focus-visible,
+[data-ground="dark"] :focus-visible, .footer :focus-visible, [data-preloader] :focus-visible {
+  outline-color: var(--amber); box-shadow: 0 0 0 4px var(--navy);
+}
+
+/* Utilities */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip-link { position: fixed; left: var(--gutter); top: -100px; z-index: 1000; padding: 0.75rem 1rem; background: var(--paper); color: var(--ink); font-weight: 600; }
+.skip-link:focus { top: var(--gutter); }
+
+/* JS gating: hidden states exist only once JS has confirmed it is running.
+   .js and .is-booting are added by the inline head script (Step 4.2 of the technical spec). */
+[data-preloader] { display: none; }
+.js [data-preloader] { display: block; }
+.js.is-booting [data-reveal]:not([data-reveal="w"]) { visibility: hidden; }
+
+/* Reveal helpers */
+[data-reveal="a"], [data-reveal="h"] { perspective: 60rem; }
+[data-reveal="slide"] { overflow: hidden; }

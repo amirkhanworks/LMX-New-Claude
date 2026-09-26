@@ -1,0 +1,35 @@
+:root {
+  /* Brand (unchanged from the current website) */
+  --navy:   #0D1D35;
+  --blue:   #1A5CB8;
+  --amber:  #E8B84B;
+  --red:    #CC2222;
+  --paper:  #FAFAF8;
+  --ink:    #16213A;
+
+  /* Opacity ramps: the only way to make muted colour. No greys. */
+  --ink-60: #16213A99;  --ink-30: #16213A4D;  --ink-10: #16213A1A;  --ink-05: #16213A0D;
+  --paper-60: #FAFAF899; --paper-30: #FAFAF84D; --paper-10: #FAFAF81A; --paper-05: #FAFAF80D;
+
+  /* Type */
+  --font-display: "Space Grotesk", "Space Grotesk Fallback", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", "IBM Plex Sans Fallback", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, monospace;
+  --fs-display: clamp(3rem, 12vw, 12rem);
+  --fs-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --fs-label: 0.75rem;
+
+  /* Layout */
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --radius: 0.75rem;
+  --corner-size: 72px;
+
+  /* Motion mirrors of the JS tokens, for CSS transitions only */
+  --dur-s: 0.4s;
+  --ease-css: cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  /* Runtime, written by JS */
+  --progress: 0%;
+  --sbw: 0px;
+}
+@media (max-width: 991px) { :root { --corner-size: 56px; } }

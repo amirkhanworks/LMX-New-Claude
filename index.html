@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Luminox Automation | Smart Home Automation in Mumbai, No Rewiring</title>
+  <meta name="description" content="Retrofit smart home automation for the home you already have. One visit, no rewiring, free installation across Mumbai.">
+  <link rel="canonical" href="https://luminoxautomation.com/">
+  <meta name="theme-color" content="#0D1D35">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:title" content="Luminox Automation | Smart Home Automation in Mumbai, No Rewiring">
+  <meta property="og:description" content="Retrofit smart home automation for the home you already have. One visit, no rewiring, free installation across Mumbai.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luminoxautomation.com/">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:image" content="https://luminoxautomation.com/og-home.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="/fonts/space-grotesk-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- PLACEHOLDER photography: preloads the stopgap hero image; point at the real hero-living-room derivative once Batch 4's image pipeline runs -->
+  <link rel="preload" href="/img/hero-living-room.jpg" as="image" fetchpriority="high">
+
+  <script>
+    (function (d, w) {
+      var h = d.documentElement;
+      h.classList.add("js", "is-booting");
+      // If the module never boots (blocked, failed, very slow network), show everything.
+      w.setTimeout(function () { if (!w.__lmxBooted) h.classList.remove("js", "is-booting"); }, 5000);
+    })(document, window);
+  </script>
+  <script type="module" src="/src/main.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Luminox Automation",
+    "url": "https://luminoxautomation.com/",
+    "logo": "https://luminoxautomation.com/svg/logo-wordmark.svg",
+    "foundingDate": "2020",
+    "email": "info@luminoxautomation.com",
+    "telephone": "+91-96193-10901",
+    "address": { "@type": "PostalAddress", "addressLocality": "Mumbai", "addressRegion": "Maharashtra", "addressCountry": "IN" },
+    "areaServed": "Mumbai",
+    "sameAs": ["https://www.linkedin.com/company/luminoxautomation/"]
+  }
+  </script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Fixed UI -->
+  <a class="corner" href="/" aria-label="Luminox Automation, home" data-corner>
+    <span class="corner__ring" data-corner-ring aria-hidden="true">
+      <svg viewBox="0 0 100 100" focusable="false">
+        <defs><path id="corner-ring-path" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+        <text><textPath href="#corner-ring-path" textLength="238" lengthAdjust="spacing">LUMINOX AUTOMATION &#183; MUMBAI &#183; EST. 2020 &#183; </textPath></text>
+      </svg>
+    </span>
+    <img class="corner__icon" src="/svg/logo-icon.svg" alt="" width="159" height="177">
+  </a>
+
+  <header class="nav" data-theme>
+    <nav aria-label="Primary">
+      <ul class="nav__list" id="nav-list">
+        <li><a class="nav__link label" href="/" aria-current="page">Home</a></li>
+        <li><a class="nav__link label" href="/about.html">About</a></li>
+        <li><a class="nav__link label" href="/services.html">Engineering</a></li>
+      </ul>
+      <a class="btn btn--nav" href="https://form.typeform.com/to/ywDES3IY" target="_blank" rel="noopener">Request a Demo<span class="sr-only"> (opens in a new tab)</span></a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-sheet" data-nav-toggle>
+        <span class="sr-only">Menu</span><span class="nav__bars" aria-hidden="true"></span>
+      </button>
+    </nav>
+  </header>
+  <div class="nav-sheet" id="nav-sheet" data-ground="dark" hidden>
+    <ul class="nav-sheet__list">
+      <li><a class="label" href="/">Home</a></li>
+      <li><a class="label" href="/about.html">About</a></li>
+      <li><a class="label" href="/services.html">Engineering</a></li>
+    </ul>
+    <a class="btn btn--paper" href="https://form.typeform.com/to/ywDES3IY" target="_blank" rel="noopener">Request a Demo<span class="sr-only"> (opens in a new tab)</span></a>
+    <a class="btn btn--ghost-dark" href="https://wa.me/919619310901?text=Hi%2C%20I%27d%20like%20to%20book%20a%20Luminox%20demo%20for%20my%20home." target="_blank" rel="noopener">Chat on WhatsApp<span class="sr-only"> (opens in a new tab)</span></a>
+  </div>
+
+  <p class="counter mono" data-theme aria-hidden="true"><span data-scroll-counter>00</span></p>
+  <div class="rail" data-theme data-rail>
+    <button class="rail__thumb" type="button" role="slider" aria-label="Page scroll position"
+            aria-valuemin="0" aria-valuemax="99" aria-valuenow="0" data-rail-thumb></button>
+  </div>
+
+  <!-- Preloader: full sequence on Home -->
+  <div class="preloader" data-preloader aria-hidden="true">
+    <svg class="preloader__outline preloader__outline--1" viewBox="0 0 560 1600" preserveAspectRatio="none" focusable="false"><path d="M280 0 560 280V1600H0V280Z"/></svg>
+    <svg class="preloader__outline preloader__outline--2" viewBox="0 0 560 1600" preserveAspectRatio="none" focusable="false"><path d="M280 0 560 280V1600H0V280Z"/></svg>
+    <div class="preloader__center">
+      <span class="preloader__disc" data-pre-in><img src="/svg/logo-icon.svg" alt="" width="159" height="177"></span>
+      <p class="preloader__label label" data-pre-in>Luminox Automation</p>
+      <p class="preloader__sig mono" data-pre-in>19.13&#176; N, 72.83&#176; E / Mumbai</p>
+      <span class="preloader__bar" data-pre-bar></span>
+    </div>
+  </div>
+
+  <main id="main" tabindex="-1">
+
+    <!-- 10.1 Hero: the dive -->
+    <section class="hero hold" data-bg="dark" data-hero aria-labelledby="hero-title">
+      <div class="hold__screen">
+        <div class="hero__frame" data-hero-frame>
+          <div class="hero__bg">
+            <!-- PLACEHOLDER photography: swap for a real "apartment living room, evening lamps" shot (Build Prompt Step 12.1) -->
+            <img class="hero__img" src="/img/hero-living-room.jpg" alt="A warmly lit living room at dusk" width="1600" height="1000" fetchpriority="high" data-hero-img>
+          </div>
+        </div>
+        <div class="hero__content" data-reveal-manual>
+          <h1 id="hero-title" class="display"><span class="display__line">The home</span> <span class="display__line">you already have</span></h1>
+          <p class="lede" data-hero-in>Made smart in a single visit. No rewiring, no renovation.</p>
+          <a class="btn btn--paper" data-hero-in href="https://form.typeform.com/to/ywDES3IY" target="_blank" rel="noopener">Request a Demo<span class="sr-only"> (opens in a new tab)</span></a>
+          <p class="mono hero__ticker" data-hero-in>Patent-pending &#183; One visit, fully installed &#183; Free installation across Mumbai &#183; 100+ on the Mumbai waiting list</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10.2 Statement: word-spacing spread -->
+    <section class="spread" data-bg="color" data-word-spread aria-labelledby="spread-title">
+      <h2 id="spread-title" class="display spread__line" data-spread-line>No rewiring.</h2>
+      <p class="mono spread__note" data-reveal="ctn" data-reveal-start="top 90%">Installs behind your existing switchboard</p>
+    </section>
+
+    <!-- 10.3 Every Room, Automated: horizontal track -->
+    <section class="rooms" data-bg="light" data-hscroll aria-labelledby="rooms-title">
+      <div class="rooms__screen">
+        <div class="rooms__track" data-hscroll-track>
+          <div class="rooms__intro">
+            <h2 id="rooms-title" class="display"><span class="display__line" data-drift>Every room,</span> <span class="display__line" data-drift>automated</span></h2>
+            <p class="lede">One system, built to grow with your home.</p>
+          </div>
+
+          <article class="panel" data-reveal="w">
+            <div class="panel__media" data-reveal="slide"><div data-reveal-child><img class="panel__img" src="/img/room-lights.jpg" alt="" width="960" height="1280"></div></div>
+            <h3 class="panel__title">Lights</h3><p class="mono">Switchboard / Live</p>
+          </article>
+          <article class="panel" data-reveal="w">
+            <div class="panel__media" data-reveal="slide"><div data-reveal-child><img class="panel__img" src="/img/room-fans.jpg" alt="" width="960" height="1280"></div></div>
+            <h3 class="panel__title">Fans</h3><p class="mono">Switchboard / Live</p>
+          </article>
+          <article class="panel" data-reveal="w">
+            <div class="panel__media" data-reveal="slide"><div data-reveal-child><img class="panel__img" src="/img/room-leds.jpg" alt="" width="960" height="1280"></div></div>
+            <h3 class="panel__title">LEDs</h3><p class="mono">Switchboard / Live</p>
+          </article>
+          <article class="panel" data-reveal="w">
+            <div class="panel__media" data-reveal="slide"><div data-reveal-child><img class="panel__img" src="/img/room-tv.jpg" alt="" width="960" height="1280"></div></div>
+            <h3 class="panel__title">TV</h3><p class="mono">Smart socket / Live</p>
+          </article>
+          <article class="panel" data-reveal="w">
+            <div class="panel__media" data-reveal="slide"><div data-reveal-child><img class="panel__img" src="/img/room-water-pump.jpg" alt="" width="960" height="1280"></div></div>
+            <h3 class="panel__title">Water pump</h3><p class="mono">Smart socket / Live</p>
+          </article>
+          <article class="panel" data-reveal="w">
+            <div class="panel__media" data-reveal="slide"><div data-reveal-child><img class="panel__img" src="/img/room-security.jpg" alt="" width="960" height="1280"></div></div>
+            <h3 class="panel__title">Security &amp; surveillance</h3><p class="mono">Cameras + sensors / Live</p>
+          </article>
+          <article class="panel panel--soon" data-reveal="w">
+            <div class="panel__media" data-reveal="slide"><div data-reveal-child><img class="panel__img" src="/img/room-curtains.jpg" alt="" width="960" height="1280"></div></div>
+            <h3 class="panel__title">Curtains <span class="pill-soon">Coming soon</span></h3><p class="mono">Roadmap</p>
+          </article>
+          <article class="panel panel--soon" data-reveal="w">
+            <div class="panel__media" data-reveal="slide"><div data-reveal-child><img class="panel__img" src="/img/room-ac.jpg" alt="" width="960" height="1280"></div></div>
+            <h3 class="panel__title">AC <span class="pill-soon">Coming soon</span></h3><p class="mono">Roadmap</p>
+          </article>
+
+          <div class="panel panel--end">
+            <p class="lede">Start with one room. Add more whenever you are ready.</p>
+            <a class="btn btn--ink" href="https://form.typeform.com/to/ywDES3IY" target="_blank" rel="noopener">Request a Demo<span class="sr-only"> (opens in a new tab)</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10.4 Three ways in: zoom-through hand-off -->
+    <section class="zoom hold" data-bg="light" data-zoom aria-labelledby="zoom-title">
+      <div class="hold__screen">
+        <div class="zoom__under" data-ground="dark" aria-hidden="true"><p class="display">One press.</p></div>
+        <div class="zoom__over" data-ground="light" data-zoom-over>
+          <h2 id="zoom-title" class="display" data-zoom-text>Three ways in</h2>
+          <div class="zoom__grid" data-zoom-grid>
+            <article class="ctrl"><h3>App</h3><p>Your whole home, from anywhere.</p><p class="mono">iOS + Android</p></article>
+            <article class="ctrl"><h3>Voice</h3><p>Ask, and it happens.</p><p class="mono">Hands-free</p></article>
+            <article class="ctrl" data-zoom-focus><h3>Keychain Remote</h3><p>One press. No phone, no login.</p><p class="mono">One button</p></article>
+          </div>
+          <ul class="chips" data-zoom-text>
+            <li>Temperature &amp; humidity sensor</li>
+            <li>IR learning &amp; blaster, for TV remotes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10.5 Keychain Remote and family (receiver of 10.4) -->
+    <section class="keychain" data-bg="dark" aria-labelledby="keychain-title">
+      <div class="keychain__head"><h2 id="keychain-title" class="display">One press.</h2></div>
+      <div class="keychain__body" data-reveal="w" data-reveal-start="top 60%">
+        <p class="lede" data-reveal="p">For a parent or grandparent who does not want to learn an app. A single button on their keychain turns on the porch light, the fan, or a whole scene. No phone, no login, no learning curve.</p>
+        <img class="keychain__illustration" src="/svg/keychain-remote.svg" alt="" data-draw>
+        <figure class="testimonial" data-reveal="ctn">
+          <blockquote><p class="quote">&#8220;The best part for us has been my grandparents. They can turn on the lights, fan, or AC with just their voice, without getting out of bed.&#8221;</p></blockquote>
+          <figcaption><span class="monogram" aria-hidden="true">ZS</span> <strong>Zahid Shaikh</strong> <span class="mono">Andheri &#183; Homeowner &#183; Beta tester</span></figcaption>
+          <p class="testimonial__note muted-dark">AC control was part of our beta and is coming soon for all homes.</p>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 10.6 Safe by Design: clip-path curtains as a camera -->
+    <section class="curtain hold" data-bg="dark" data-curtain aria-labelledby="curtain-title">
+      <div class="hold__screen">
+        <div class="curtain__frame" data-curtain-frame>
+          <div class="curtain__half" data-curtain-l><img src="/svg/system-diagram.svg" alt="Diagram: the switchboard connects to hot-swappable relays; only the relay side carries 240V; a low-voltage main board connects to the app, voice and keychain remote." width="1600" height="900"></div>
+          <div class="curtain__half" data-curtain-r><img src="/svg/system-diagram.svg" alt="" aria-hidden="true" width="1600" height="900"></div>
+          <span class="curtain__motif curtain__motif--l" data-motif-l aria-hidden="true"></span>
+          <span class="curtain__motif curtain__motif--r" data-motif-r aria-hidden="true"></span>
+        </div>
+        <div class="curtain__copy" data-reveal-manual data-curtain-copy>
+          <h2 id="curtain-title" class="display">Safe by design</h2>
+          <ul class="facts">
+            <li><p class="mono">Low-voltage brain</p><p>240V never touches the main board.</p></li>
+            <li><p class="mono">Hot-swappable relays</p><p>Swap a relay and your settings stay put. No recalibration, no rewiring.</p></li>
+            <li><p class="mono">2-year warranty</p><p>Every installation is covered.</p></li>
+          </ul>
+          <p class="mono">Patent-pending</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10.7 Renters: "It moves with you" sticky split -->
+    <section class="renter" data-bg="light" data-renter data-curtain-next aria-labelledby="renter-title">
+      <div class="renter__left"><h2 id="renter-title" class="display" data-reveal="h"><span class="display__line">It moves</span> <span class="display__line">with you.</span></h2></div>
+      <span class="renter__rule" data-renter-rule aria-hidden="true"></span>
+      <div class="renter__right">
+        <div class="renter__block" data-reveal="ctn"><p class="lede">Renting? Luminox installs without touching your walls or wiring.</p></div>
+        <div class="renter__block" data-reveal="ctn"><p class="lede">Move homes and we relocate your system once a year, at no extra cost.</p></div>
+        <div class="renter__media" data-parallax="w"><div data-parallax="img-in"><img src="/img/moving-boxes.jpg" alt="" width="960" height="1200"></div></div>
+        <div class="renter__block" data-reveal="ctn"><p class="lede">Start with one room. Take every room with you.</p></div>
+        <figure class="testimonial renter__block" data-reveal="ctn">
+          <blockquote><p class="quote">&#8220;I can turn my AC on before I even walk in the door, or check that my smart sockets are switched off when I&#8217;m out for the day. It&#8217;s a small thing, but it&#8217;s changed how I think about coming home.&#8221;</p></blockquote>
+          <figcaption><span class="monogram" aria-hidden="true">SK</span> <strong>Shrazil Khot</strong> <span class="mono">Bandra &#183; Renter &#183; Beta tester</span></figcaption>
+          <p class="testimonial__note muted-light">AC control was part of our beta and is coming soon for all homes.</p>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 10.8 Bridge to Engineering: slide band -->
+    <section class="bridge" data-bg="dark" aria-labelledby="bridge-title">
+      <div class="bridge__copy" data-reveal="w">
+        <p class="mono" data-reveal="ctn">For businesses</p>
+        <h2 id="bridge-title" class="display" data-reveal="h"><span class="display__line">IoT engineers</span> <span class="display__line">by trade</span></h2>
+        <p class="lede" data-reveal="p">Custom hardware, firmware and cloud, from schematic to deployment.</p>
+        <a class="btn btn--ghost-dark" href="/services.html" data-reveal="ctn">Explore Engineering <span aria-hidden="true">&#8594;</span></a>
+      </div>
+      <div class="bridge__media" data-reveal="slide"><div data-reveal-child><img src="/img/pcb-macro.jpg" alt="" width="1600" height="1000"></div></div>
+    </section>
+
+    <!-- 10.9 Final CTA and footer: the page closes on itself -->
+    <div class="close" data-close>
+      <div class="close__screen">
+        <section class="cta" data-bg="color" data-page-clip aria-labelledby="cta-title">
+          <div data-reveal="w">
+            <h2 id="cta-title" class="display" data-reveal="h">Ready?</h2>
+            <p class="lede" data-reveal="p">One visit is all it takes. Tell us a bit about your home, and we will handle the rest.</p>
+            <div class="cta__actions" data-reveal="ctn">
+              <a class="btn btn--paper" href="https://form.typeform.com/to/ywDES3IY" target="_blank" rel="noopener">Request a Demo<span class="sr-only"> (opens in a new tab)</span></a>
+              <a class="btn btn--ghost-dark" href="https://wa.me/919619310901?text=Hi%2C%20I%27d%20like%20to%20book%20a%20Luminox%20demo%20for%20my%20home." target="_blank" rel="noopener">Chat on WhatsApp<span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </div>
+
+          <form class="waitlist" data-waitlist action="https://formspree.io/f/FORMSPREE_FORM_ID" method="POST" novalidate>
+            <!-- PLACEHOLDER: FORMSPREE_FORM_ID -->
+            <h3 class="label">Be first to know</h3>
+            <p class="muted-dark">The Luminox app is on its way. Leave your email and we&#8217;ll let you know the moment it&#8217;s live. iOS and Android.</p>
+            <label class="label" for="wl-email">Email address</label>
+            <div class="waitlist__row">
+              <input id="wl-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="wl-consent wl-status">
+              <button class="btn btn--paper" type="submit">Notify me</button>
+            </div>
+            <input type="hidden" name="source" value="website-waitlist">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
+            <p id="wl-consent" class="waitlist__consent">We will only email you about the Luminox app launch. See our <a href="/privacy.html">Privacy page</a>.</p>
+            <p id="wl-status" class="waitlist__status" role="status" aria-live="polite" data-waitlist-status></p>
+            <p id="wl-alt" class="waitlist__alt">Prefer WhatsApp? <a href="https://wa.me/919619310901?text=Hi%2C%20please%20add%20me%20to%20the%20Luminox%20app%20waitlist." target="_blank" rel="noopener">Message us<span class="sr-only"> (opens in a new tab)</span></a>.</p>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" data-footer>
+    <div class="footer-inner">
+      <div class="footer__rail footer__rail--l" data-footer-text>
+        <div class="footer__logo"><img src="/svg/logo-wordmark.svg" alt="Luminox Automation" width="796" height="220"></div>
+        <h2 class="label">Site</h2>
+        <ul><li><a href="/">Home</a></li><li><a href="/about.html">About</a></li><li><a href="/services.html">Engineering</a></li><li><a href="/privacy.html">Privacy</a></li></ul>
+      </div>
+      <div class="footer__rail footer__rail--r" data-footer-text>
+        <h2 class="label">Get in touch</h2>
+        <ul>
+          <li><a href="tel:+919619310901">+91 96193 10901</a></li>
+          <li><a href="mailto:info@luminoxautomation.com">info@luminoxautomation.com</a></li>
+          <li><a href="https://wa.me/919619310901" target="_blank" rel="noopener">WhatsApp<span class="sr-only"> (opens in a new tab)</span></a></li>
+          <li><a href="https://www.linkedin.com/company/luminoxautomation/" target="_blank" rel="noopener" aria-label="Luminox Automation on LinkedIn (opens in a new tab)">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="footer__base mono" data-footer-text>
+        <span>Luminox Automation &#183; Mumbai &#183; Est. 2020</span>
+        <span>&#169; 2026 Luminox Automation. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@font-face { font-family: "Space Grotesk"; src: url("/fonts/space-grotesk-var.woff2") format("woff2"); font-weight: 300 700; font-display: swap; }
+@font-face { font-family: "IBM Plex Sans"; src: url("/fonts/plex-sans-300.woff2") format("woff2"); font-weight: 300; font-display: swap; }
+@font-face { font-family: "IBM Plex Sans"; src: url("/fonts/plex-sans-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "IBM Plex Sans"; src: url("/fonts/plex-sans-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url("/fonts/plex-mono-500.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+
+/* Metric-matched fallbacks. GENERATE the override values before launch, do not guess them:
+   npx fontpie public/fonts/space-grotesk-var.woff2 --name "Space Grotesk"
+   npx fontpie public/fonts/plex-sans-400.woff2 --name "IBM Plex Sans"
+   npx fontpie public/fonts/plex-mono-500.woff2 --name "IBM Plex Mono"
+   Paste the three generated "... Fallback" @font-face blocks below this line.
+   PLACEHOLDER: fallback metric overrides not yet generated. */
